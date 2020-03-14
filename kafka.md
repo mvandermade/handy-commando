@@ -24,7 +24,28 @@ Extract kafka at a useful location
 tar -xzf kafka_2.12-2.4.1.tgz
 ```
 
-## Start kafka as attached process (&)
+## Start kafka
+### tmux
+```sh
+tmux new -s kafka
+```
+
+```sh
+bin/zookeeper-server-start.sh config/zookeeper.properties
+```
+
+```prefix``` (```C-b```) ```arrow```
+
+```sh
+bin/kafka-server-start.sh config/server.properties
+```
+
+Take a peek at the advertised hostname, as it is resolved by java.net.InetAddress.getCanonicalHostName().
+Make sure it matches your machine's hostname/IP.
+
+Then detach tmux to keep everything running: ```C-b d```
+
+### Attached shell process
 ```sh
 bin/zookeeper-server-start.sh config/zookeeper.properties &&
 bin/kafka-server-start.sh config/server.properties &
