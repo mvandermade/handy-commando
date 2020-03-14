@@ -13,6 +13,11 @@ Use a program like PuTTy: https://www.putty.org.
 
 ## While on a Linux system through SSH
 
+### Re-use session
+```sh
+tmux
+```
+
 ### Show all online ssh sessions
 ```sh
 who
