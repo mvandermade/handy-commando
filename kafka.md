@@ -2,6 +2,8 @@
 By far the easiest is a native installation of kafka.
 I personally always have some sort of issue when using dockerized kafka's...
 
+Also note: it's easier to do this on a different (virtual)machine, otherwise you need to adjust the kafka config so it will listen to the right IP address! localhost:9092 is often denied.
+
 ### Install Java
 ```sh
 apt-get install default-jdk
