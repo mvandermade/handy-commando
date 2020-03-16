@@ -47,6 +47,11 @@ Make sure it matches your machine's hostname/IP.
 
 Then detach tmux to keep everything running: ```C-b d```
 
+Get back to it using:
+```sh
+tmux attach -t kafka
+```
+
 ### Attached shell process
 ```sh
 bin/zookeeper-server-start.sh config/zookeeper.properties &&
