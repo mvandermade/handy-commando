@@ -1,6 +1,7 @@
 # tmux
 Easier to get up and running with Linux systems...
 https://github.com/tmux/tmux/wiki
+https://www.youtube.com/watch?v=5iXzqN8-34E
 
 ## Good to know
 Common abbreviations:
