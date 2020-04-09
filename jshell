@@ -12,6 +12,21 @@ Not required to add ; (added automatically)
 If you need global access.
 OS dependent how easy this is...
 
+## MacOS
+Copy the jdk folder entirely to:
+```
+cd /Library/Java/JavaVirtualMachines
+```
+Then (assuming it's in downloads)
+```
+mv ~/Downloads/jdk-14.jdk .
+```
+
+```
+sudo !!
+```
+
+
 # JShell
 
 List typed snippets:
