@@ -1,0 +1,25 @@
+# Install
+
+Download and unzip JDK:
+```
+http://jdk.java.net/
+```
+
+# Notes
+Not required to add ; (added automatically)
+
+# Add to path
+If you need global access.
+OS dependent how easy this is...
+
+# JShell
+
+List typed snippets:
+```
+/list
+```
+
+Dump to file:
+```
+/save
+```
