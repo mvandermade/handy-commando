@@ -92,3 +92,7 @@ sddm_enable="YES"
 
 # Make it detect hardware properly
 - No idea, there is no such thing as "device manager".
+## Touchpad
+- enable moused in your /etc/rc.conf ```moused_enable="YES"```
+- add to /boot/loader.conf ```hw.psm.synaptics_support="1"```
+- Bit strange behaviour when tapping with two fingers, but I kind of living with it now.
