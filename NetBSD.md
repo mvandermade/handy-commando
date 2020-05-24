@@ -59,6 +59,27 @@ xdm=YES
 - login into the graphical shell.
 - Switch to the thrusty old terminal with lower dpi res using CTRL+ALT+F1,F2,F3,F4. In my case XDM sits at CTRL+ALT+F5.
 
+# Install <web browser, something else>
+- Bewary of the fact that NetBSD does not contain any SSL certificates.
+- Using pkg_add you can therefore (initially) only install through HTTP
+- https://www.netbsd.org/docs/guide/en/chap-boot.html#chap-boot-pkgsrc
+- Find out what PORT (arch) and Release you want to use (9.0). Check here with a web browser: http://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/
+- Note: current and stable mean different things in NetBSD world. https://www.netbsd.org/releases/release-map.html
+- In my case I type in the sh shell:
+- ```PKG_PATH="http://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/amd64/9.0/All```
+- This is now a current shell variable for sh to use.
+- Export it so pkg_add can see it: ```export PKG_PATH```
+- Hooray this was the hardest part.
+- Hop over to ```su```, your shell variables (PKG_PATH) will persist.
+- 
+
+# Keeping the system updated
+- Perhaps through pkg_add
+
+# Change brightness
+- Perhaps use xBrightness
+
+
 ## And the why is this useful ?
 I don't really can answer you this.
 If you have a working box that is fine, then don't mess around with duo booting.
