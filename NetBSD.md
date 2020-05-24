@@ -70,6 +70,8 @@ xdm=YES
 - This is now a current shell variable for sh to use.
 - Export it so pkg_add can see it: ```export PKG_PATH```
 - Hooray this was the hardest part. Https is something I didn't got working, so I stick to http.
+- (If you reboot this variable is gone and you have to type it in a shell, a .sh file won't work).
+
 - Hop over to ```su```, your shell variables (PKG_PATH) will persist.
 - Type ```pkg_add firefox``` to install the latest nightly of firefox.
 
