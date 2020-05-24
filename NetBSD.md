@@ -42,6 +42,7 @@ wpa_supplicant=YES
 wpa_supplicant_flags="-B -D bsd -i iwm0 -c /etc/wpa_supplicant.conf"
 dhcpcd=YES
 dhcpcd_flags="-qM iwm0 -b"
+hostname=mywificlientname
 ```
 - reboot
 - login as non-root
@@ -114,7 +115,7 @@ Afterall BSD derivatives can be found in a lot of places !
 - The backspace and delete key do not always work (in ```vi``` for example).
 - Touchpad rightclick area hard to use
 - Two finger scrolling not working (instead there is 1 finger scrolling).
-- No WWDM hotkey support (for brightness, volume)
+- No WDDM-like hotkey support (for brightness, volume)
 - Laptop lid closing doesn't have any effect
 - Fingerprint reader not working
 - Really hard to configure things you don't know without the installer GUI.
