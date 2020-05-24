@@ -35,6 +35,11 @@ https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.S
 - The mouse works, but I didn't see anything useful to do with it :)
 - Fonts are super small on my machine, no idea how to change it (so get your reading glasses ready)
 
+# Change display brightness
+- As root
+- ```pkg install xbrightness```
+- Doesn't work?
+
 # Install webbrowser.
 - ```su``` doesn't work for my user. So login as "root" with tha password you made just a few minutes ago.
 - pkg install firefox
@@ -42,4 +47,7 @@ https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.S
 - A lot of console output. I cant scroll the console, So I hope it's fine
 
 # Resolve error "no DISPLAY environment variable specified: 
-- 
+- ```pkg install x11/kde5```
+- If you have 5GB disk space at your disposal go ahead type y to install it.
+- I kind of like the drawing app kritta by KDE. You can also try another one:
+- https://www.freebsd.org/doc/handbook/x11-wm.html
