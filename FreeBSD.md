@@ -40,6 +40,12 @@ https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.S
 - ```pkg install xbrightness```
 - Doesn't work?
 
+# Edit documents
+- as root
+- ```pkg install nano```. This allows you to lean onto the keyboard without messing things up (ComputerPhile youtube quote).
+
+
+
 # Install webbrowser.
 - ```su``` doesn't work for my user. So login as "root" with tha password you made just a few minutes ago.
 - pkg install firefox
@@ -51,3 +57,16 @@ https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.S
 - If you have 5GB disk space at your disposal go ahead type y to install it.
 - I kind of like the drawing app kritta by KDE. You can also try another one:
 - https://www.freebsd.org/doc/handbook/x11-wm.html
+
+# Setup KDE after installation
+- Add a window manager that also bootstraps the GUI: ```pkg install x11/sddm```
+- Following the man page:
+- Add this line to /etc/fstab ```proc           /proc       procfs  rw  0   0```
+- Add these lines in /etc/rc.conf
+```
+# x11/kde5
+dbus_enable="YES"
+hald_enable="YES"
+# Window manager x11/sddm
+sddm_enable="YES"
+```
