@@ -61,7 +61,10 @@ https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.S
 # Setup KDE after installation
 - Add a window manager that also bootstraps the GUI: ```pkg install x11/sddm```
 - Following the man page:
-- Add this line to /etc/fstab ```proc           /proc       procfs  rw  0   0```
+- Add this line to /etc/fstab 
+```
+proc           /proc       procfs  rw  0   0
+```
 - Add these lines in /etc/rc.conf
 ```
 # x11/kde5
