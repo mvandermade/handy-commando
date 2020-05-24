@@ -84,7 +84,7 @@ xdm=YES
   - (... any other X.org compatible GUI)
 
 # Keeping the system updated
-- Perhaps through pkg_add ? Or simply reinstall it.
+- Perhaps through pkg_add ? Or simply reinstall NetBSD when a new release hits.
 
 # Change brightness
 - Perhaps use xBrightness. Sysctl didn't work for my machine.
@@ -93,7 +93,7 @@ xdm=YES
 - No need, if the battery is low it will shutdown automatically.
 
 # Shutdown
-- Simply press the power button of you machine once and shortly.
+- Press the power button of you machine once and shortly.
 
 
 ## And the why is this useful ?
@@ -109,3 +109,15 @@ Don't expect a smooth user experience though! You will get stuck in editors like
 So get ready to read some manuals, because Youtube support for BSD is sparse.
 The reason I did undertake it was to checkout what BSD is all about and learn the historics behind computing in general. 
 Afterall BSD derivatives can be found in a lot of places !
+
+# Quirks you might encounter too:
+- The backspace and delete key do not always work (in ```vi``` for example).
+- Touchpad rightclick area hard to use
+- Two finger scrolling not working (instead there is 1 finger scrolling).
+- No WWDM hotkey support (for brightness, volume)
+- Laptop lid closing doesn't have any effect
+- Fingerprint reader not working
+- Really hard to configure things you don't know without the installer GUI.
+- No SSL support for the NetBSD website.
+- XDM fonts scale different from the other TTY's.
+- xterm under xdm doesn't support the arrowUp key.
