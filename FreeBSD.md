@@ -1,9 +1,9 @@
 ## Burning image to USB
 
-I use the NetBSD imager to image an USB flash drive with:
-https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-amd64-memstick.img.xz
-Make sure to match the SHA256 or SHA512 you see in the GUI of the NetBSD imager with that one on the website:
-https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.SHA512-FreeBSD-12.1-RELEASE-amd64
+- I use the NetBSD imager to image an USB flash drive with:
+- https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/FreeBSD-12.1-RELEASE-amd64-memstick.img.xz
+- Make sure to match the SHA256 or SHA512 you see in the GUI of the NetBSD imager with that one on the website:
+- https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.SHA512-FreeBSD-12.1-RELEASE-amd64
 
 # Boot the target PC from USB
 - You know this is always a bit of a game, could take you 1 minute or 15 minutes depending on how quick you can remember all the hidden shortkeys.
@@ -20,9 +20,9 @@ https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.1/CHECKSUM.S
 - Now select a timezone (UTC isn't a timezone, but it is equivalent to UTC+0 timezone I guess.)
 - System configuration, (my thought it it writes to /etc/rc.conf where you can undo it)
 - Press SPACE for the following:
-  - ntpupdate
+  - ntpupdate (slows boot time about 30 seconds)
   - ntpd (because in my experience clock drift is quite a thing)
-  - moused (let's see what it does)
+  - moused requirement for KDE (in my case)
   - powerd
 - Press ENTER to commit System configuration
 - System Hardening, my pc isn't a server so choose what you think is best.
@@ -82,3 +82,13 @@ sddm_enable="YES"
 - ```kld_list="/boot/modules/i915kms.ko" ```
 - reboot
 - Boom it works
+
+# Change brightness (freeBSD wide)
+- ```kldload acpi_video``` https://forums.freebsd.org/threads/how-to-change-brightness-with-fn-key.51987/
+- To persist boot:
+- as root: ```sysrc kld_list+=acpi_video``` which will append the command to /etc/rc.conf
+- Reboot
+- Use the hotkeys on your keyboard to change brightness. Note it's verrry small increments, so hold the keys a long time!
+
+# Make it detect hardware properly
+- No idea, there is no such thing as "device manager".
