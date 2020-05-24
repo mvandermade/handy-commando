@@ -98,9 +98,10 @@ sddm_enable="YES"
 - Touchpad smoothscroll is subpar performing and very quirky if smoothscroll is enabled.
 - You can't limit the CPU frequency so when you are browsing the web it gets hot...
 - The bootup procedure is very verbose, and quite slow...
-- Hotplugging HDMI does not work. But I kind of expected this since I was messing around with drivers. It's perfect if you boot with the display connected... mind you (!!). Switching displays is actually quite easy.
+- Hotplugging HDMI does not work. But I kind of expected this since I was messing around with drivers. It's perfect if you boot with the display connected... mind you (!good ^.^!). Switching displays is actually quite easy.
 - Unplugging your display cable doesn't crash the system, but the internal display stays dark too.
 - The display output chooser (Fn+F4) doesn't support click again (Fn+F4) through to cycle modes. This would be actually very helpful in those situations as described above.
 - The Fn+arrow key combinations do not work (home, pgup pgdown, end). These options are also helpful as described above when blindly tapping.
 - Fonts in KDE aren't the greatest and aliasing is I would say acceptable but not comfortable to read. (especially the font of this github editor).
 - You can't adjust the "natural movement" of the scrollwheel to the touchpad only. This makes it a learning curve for scrolling on the mouse since you now scroll down too to go up.
+- Same goes for mouse sensitivity, as I like to have multiple types of mice connected. Perhaps it's possible to read these settings from the mouse itself ? (logitech in my case).
