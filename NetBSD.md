@@ -63,21 +63,35 @@ xdm=YES
 - Bewary of the fact that NetBSD does not contain any SSL certificates.
 - Using pkg_add you can therefore (initially) only install through HTTP
 - https://www.netbsd.org/docs/guide/en/chap-boot.html#chap-boot-pkgsrc
-- Find out what PORT (arch) and Release you want to use (9.0). Check here with a web browser: http://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/
+- Find out what PORT (arch) and Release you want to use (9.0). Check here with a web browser: http://cdn.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/
 - Note: current and stable mean different things in NetBSD world. https://www.netbsd.org/releases/release-map.html
 - In my case I type in the sh shell: (_current is needed for things like firefox).
 - ```PKG_PATH="http://cdn.NetBSD.org/pub/pkgsrc/packages/NetBSD/amd64/9.0_current/All```
 - This is now a current shell variable for sh to use.
 - Export it so pkg_add can see it: ```export PKG_PATH```
-- Hooray this was the hardest part.
+- Hooray this was the hardest part. Https is something I didn't got working, so I stick to http.
 - Hop over to ```su```, your shell variables (PKG_PATH) will persist.
-- 
+- Type ```pkg_add firefox``` to install the latest nightly of firefox.
+
+# Open a GUI app.
+- Open xdm (or use CTRL+ALT+F5 in my case) to hop to the window manager
+- Click to open "xterm"
+- Then type:
+  - firefox
+  - xClock
+  - (... any other X.org compatible GUI)
 
 # Keeping the system updated
-- Perhaps through pkg_add
+- Perhaps through pkg_add ? Or simply reinstall it.
 
 # Change brightness
-- Perhaps use xBrightness
+- Perhaps use xBrightness. Sysctl didn't work for my machine.
+
+# Check battery level, will my system die ?
+- No need, if the battery is low it will shutdown automatically.
+
+# Shutdown
+- Simply press the power button of you machine once and shortly.
 
 
 ## And the why is this useful ?
