@@ -73,3 +73,12 @@ hald_enable="YES"
 # Window manager x11/sddm
 sddm_enable="YES"
 ```
+- It didn't start. Something wasn't right with X.
+- as root ```pkg install Xorg```
+- Troubleshoot with the much simpler ```pkg install xdm```
+- ```pkg install graphics/drm-kmod``` because apparently that is needed.
+- Check the readme that follows after installation.
+- I added to /etc/rc.conf:
+- ```kld_list="/boot/modules/i915kms.ko" ```
+- reboot
+- Boom it works
