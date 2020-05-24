@@ -112,6 +112,10 @@ The reason I did undertake it was to checkout what BSD is all about and learn th
 Afterall BSD derivatives can be found in a lot of places !
 
 # Quirks you might encounter too:
+- People think your pc is crashing because of all the green letters at boottime.
+- xdm isn't self explainatory, things like full screen do not exist.
+- if xdm crashes remember the shortcut CTRL+ALT+F1
+- Don't use an external display with xdm. Terminals are fine (they simply clone).
 - The backspace and delete key do not always work (in ```vi``` for example).
 - Touchpad rightclick area hard to use
 - Two finger scrolling not working (instead there is 1 finger scrolling).
