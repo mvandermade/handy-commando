@@ -35,11 +35,6 @@
 - The mouse works, but I didn't see anything useful to do with it :)
 - Fonts are super small on my machine, no idea how to change it (so get your reading glasses ready)
 
-# Change display brightness
-- As root
-- ```pkg install xbrightness```
-- Doesn't work?
-
 # Edit documents
 - as root
 - ```pkg install nano```. This allows you to lean onto the keyboard without messing things up (ComputerPhile youtube quote).
@@ -96,3 +91,10 @@ sddm_enable="YES"
 - enable moused in your /etc/rc.conf ```moused_enable="YES"```
 - add to /boot/loader.conf ```hw.psm.synaptics_support="1"```
 - Bit strange behaviour when tapping with two fingers, but I kind of living with it now.
+
+# Quirks
+- The touchpad seems to be detected as a mouse by KDE. I'm not so sure but I can live with it.
+- You can't limit the CPU frequency so when you are browsing the web it gets hot...
+- The bootup procedure is very verbose, and quite slow...
+- Hotplugging HDMI does not work. But I kind of expected this since I was messing around with WiFi drivers.
+- Fonts in KDE aren't the greatest and aliasing is I would say acceptable but not comfortable to read.
