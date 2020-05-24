@@ -94,6 +94,7 @@ sddm_enable="YES"
 
 # Quirks
 - The touchpad seems to be detected as a mouse by KDE. I'm not so sure but I can live with it.
+- Touchpad smoothscroll is subpar performing and very quirky.
 - You can't limit the CPU frequency so when you are browsing the web it gets hot...
 - The bootup procedure is very verbose, and quite slow...
 - Hotplugging HDMI does not work. But I kind of expected this since I was messing around with WiFi drivers.
