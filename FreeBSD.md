@@ -103,3 +103,4 @@ sddm_enable="YES"
 - The display output chooser (Fn+F4) doesn't support click again (Fn+F4) through to cycle modes. This would be actually very helpful in those situations as described above.
 - The Fn+arrow key combinations do not work (home, pgup pgdown, end). These options are also helpful as described above when blindly tapping.
 - Fonts in KDE aren't the greatest and aliasing is I would say acceptable but not comfortable to read. (especially the font of this github editor).
+- You can't adjust the "natural movement" of the scrollwheel to the touchpad only. This makes it a learning curve for scrolling on the mouse since you now scroll down too to go up.
