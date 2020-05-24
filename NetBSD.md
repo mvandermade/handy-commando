@@ -116,6 +116,7 @@ Afterall BSD derivatives can be found in a lot of places !
 - xdm isn't self explainatory, things like full screen do not exist.
 - if xdm crashes remember the shortcut CTRL+ALT+F1, the app ```top``` and ```kill```
 - Don't use an external display with xdm. It destroyed my entire xdm config. Terminals are fine (they simply clone based on your first display).
+- xdm failsafe mode is useless... you are left without anything to launch new applications. At this point I would recommend a reinstall of the complete NetBSD, since I didn't find any quick tutorial on how to fix all the damage (the pointer was clipping the display at this point too...).
 - The backspace and delete key do not always work (in ```vi``` for example).
 - Touchpad rightclick area hard to use
 - Two finger scrolling not working (instead there is 1 finger scrolling).
