@@ -109,6 +109,7 @@ sddm_enable="YES"
 - Same goes for mouse sensitivity, as I like to have multiple types of mice connected. Perhaps it's possible to read these settings from the mouse itself ? (logitech in my case).
 - No sleep mode engaged when folding the lid
 - If you can't read well it's very tough to do, I miss a little bit icon support in the terminal, and feel it could be a more welcoming place since the installer is so nice.
+- I have no idea if my system is up to date.
 
 # Compliment
 - Easy to understand each step
