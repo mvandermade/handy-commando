@@ -10,7 +10,8 @@
 - In my case F9 is change boot order, F10 or ESC can get you into the BIOS/EFI to configure
 - FreeBSD doesn't like EFI booting from the installer, so I switch mine to "Legacy" in "Boot order" -> Legacy support ON
 - Then you need to type some confirmation code saying you changed it.
-- FreeBSD shows a red ball logo and will take you to the installer.
+## Initial steps
+- FreeBSD shows a red ball (daemon) logo and will take you to the installer.
 - During installation you can press ESC to go back (??) but if you press ESC in the first screen you break the installer (quirk).
 - I'm not super sure what the ENTER key does all the time, but I simply went for all default on this one (so just keep pressing enter)
 - At the point of WiFi change of region is important here (because of the g/N-channels 12 and 13). https://forums.freebsd.org/threads/what-is-the-correct-regdomain-code.60469/
@@ -35,10 +36,13 @@
 - The mouse works, but I didn't see anything useful to do with it :)
 - Fonts are super small on my machine, no idea how to change it (so get your reading glasses ready)
 
-# Edit documents
-- as root
-- ```pkg install nano```. This allows you to lean onto the keyboard without messing things up (ComputerPhile youtube quote).
 
+# Change brightness (works freeBSD wide)
+- ```kldload acpi_video``` https://forums.freebsd.org/threads/how-to-change-brightness-with-fn-key.51987/
+- To persist boot:
+- as root: ```sysrc kld_list+=acpi_video``` which will append the command to /etc/rc.conf
+- Reboot
+- Use the hotkeys on your keyboard to change brightness. Note it's verrry small increments, so hold the keys a long time!
 
 
 # Install webbrowser.
@@ -47,10 +51,15 @@
 - Wait till 130 packages are loaded to the machine.
 - A lot of console output. I cant scroll the console, So I hope it's fine
 
+
+# Edit documents
+- as root
+- ```pkg install nano```. This allows you to lean onto the keyboard without messing things up (ComputerPhile youtube quote).
+
 # Resolve error "no DISPLAY environment variable specified: 
 - ```pkg install x11/kde5```
 - If you have 5GB disk space at your disposal go ahead type y to install it.
-- I kind of like the drawing app kritta by KDE. You can also try another one:
+- I kind of like the drawing app kritta by KDE as wel as Dolphin and Kate... You can also try another one:
 - https://www.freebsd.org/doc/handbook/x11-wm.html
 
 # Setup KDE after installation
@@ -68,7 +77,7 @@ hald_enable="YES"
 # Window manager x11/sddm
 sddm_enable="YES"
 ```
-- It didn't start. Something wasn't right with X.
+- It didn't start. Something wasn't right with X. (!unsure this was actually the issue, need to repeat without this Xorg step)...
 - as root ```pkg install Xorg```
 - Troubleshoot with the much simpler ```pkg install xdm```
 - ```pkg install graphics/drm-kmod``` because apparently that is needed.
@@ -76,14 +85,7 @@ sddm_enable="YES"
 - I added to /etc/rc.conf:
 - ```kld_list="/boot/modules/i915kms.ko" ```
 - reboot
-- Boom it works
-
-# Change brightness (freeBSD wide)
-- ```kldload acpi_video``` https://forums.freebsd.org/threads/how-to-change-brightness-with-fn-key.51987/
-- To persist boot:
-- as root: ```sysrc kld_list+=acpi_video``` which will append the command to /etc/rc.conf
-- Reboot
-- Use the hotkeys on your keyboard to change brightness. Note it's verrry small increments, so hold the keys a long time!
+- Boom it works, enjoy KDE !
 
 # Make it detect hardware properly
 - No idea, there is no such thing as "device manager".
@@ -105,3 +107,14 @@ sddm_enable="YES"
 - Fonts in KDE aren't the greatest and aliasing is I would say acceptable but not comfortable to read. (especially the font of this github editor).
 - You can't adjust the "natural movement" of the scrollwheel to the touchpad only. This makes it a learning curve for scrolling on the mouse since you now scroll down too to go up.
 - Same goes for mouse sensitivity, as I like to have multiple types of mice connected. Perhaps it's possible to read these settings from the mouse itself ? (logitech in my case).
+- No sleep mode engaged when folding the lid
+
+# Compliment
+- Easy to understand each step
+- Responsive typing
+- Responsive mouse
+- Low noise
+- Excellent battery-low response notification.
+- Has a tea timer (and yes you can set multiple timers).
+- KDE ships with a ton of features I never imagined would exist.
+- BSD (in general) ships with a ton of features I never imagined would be helpful.
