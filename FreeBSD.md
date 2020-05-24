@@ -108,6 +108,7 @@ sddm_enable="YES"
 - You can't adjust the "natural movement" of the scrollwheel to the touchpad only. This makes it a learning curve for scrolling on the mouse since you now scroll down too to go up.
 - Same goes for mouse sensitivity, as I like to have multiple types of mice connected. Perhaps it's possible to read these settings from the mouse itself ? (logitech in my case).
 - No sleep mode engaged when folding the lid
+- If you can't read well it's very tough to do, I miss a little bit icon support in the terminal, and feel it could be a more welcoming place since the installer is so nice.
 
 # Compliment
 - Easy to understand each step
