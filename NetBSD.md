@@ -65,8 +65,8 @@ xdm=YES
 - https://www.netbsd.org/docs/guide/en/chap-boot.html#chap-boot-pkgsrc
 - Find out what PORT (arch) and Release you want to use (9.0). Check here with a web browser: http://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/amd64/
 - Note: current and stable mean different things in NetBSD world. https://www.netbsd.org/releases/release-map.html
-- In my case I type in the sh shell:
-- ```PKG_PATH="http://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/amd64/9.0/All```
+- In my case I type in the sh shell: (_current is needed for things like firefox).
+- ```PKG_PATH="http://cdn.NetBSD.org/pub/pkgsrc/packages/NetBSD/amd64/9.0_current/All```
 - This is now a current shell variable for sh to use.
 - Export it so pkg_add can see it: ```export PKG_PATH```
 - Hooray this was the hardest part.
