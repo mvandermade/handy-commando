@@ -1,6 +1,12 @@
 ## Join SSH server
-When you first connect to a server using username/password you SHOULD verify this!
-Otherwise there is a risk that your password may be stolen.
+When you first connect to a server using username/password you SHOULD verify RSA fingerprint !
+Otherwise there is a risk that your password may be stolen (because you send it to another server).
+
+### Handy
+Ring the terminal bell
+```any
+echo '\a'
+```
 
 ### Linux
 When you have ssh installed on your system:
