@@ -3,9 +3,20 @@ When you first connect to a server using username/password you SHOULD verify RSA
 Otherwise there is a risk that your password may be stolen (because you send it to another server).
 
 ### Handy
-Ring the terminal bell
-```any
+If you want a notification when your tail catches something for example you can echo the bell char.
+Its historically there, not all modern termninal emulators can do it:
+So far what I discovered:
+
+Ring the terminal bell by sending ANSI character (tested zsh):
+```zsh
 echo '\a'
+```
+
+(No luck in Sh/BaSh yet...
+
+In powershell (? multiplatform tested on Win10)
+```psh
+echo "`a"
 ```
 
 ### Linux
