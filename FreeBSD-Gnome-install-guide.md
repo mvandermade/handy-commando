@@ -7,7 +7,7 @@
 
 
 
-```todo taken from KDE installation
+
 # Boot the target PC from USB
 - You know this is always a bit of a game, could take you 1 minute or 15 minutes depending on how quick you can remember all the hidden shortkeys.
 - In my case F9 is change boot order, F10 or ESC can get you into the BIOS/EFI to configure
@@ -96,7 +96,6 @@ sddm_enable="YES"
 - enable moused in your /etc/rc.conf ```moused_enable="YES"```
 - add to /boot/loader.conf ```hw.psm.synaptics_support="1"```
 - Bit strange behaviour when tapping with two fingers, but I kind of living with it now.
-```
 
 # Quirks
 
