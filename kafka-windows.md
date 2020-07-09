@@ -1,20 +1,25 @@
+# Install
 - Download Kafka from http://kafka.apache.org/downloads
 - Verify using ```certutils -hashfile <kafkafilename> SHA256```
 - Extract to the C drive, otherwise errors occur complaining about the path length.
-- in the path of the extracted kafka (C:\kafka) do the following:
 
-- Start Zookeeper (dependency in order to run kafka
+# Running
+- Open 2 command prompts that are in the the path of the extracted kafka (C:\kafka-version).
+- Start Zookeeper in the first command prompt:
 ```powershell
 .\bin\windows\zookeeper-server-start.bat config\zookeeper.properties
 ```
-
-- In a secoond window:
-
-- Start kafka
+- In the second command prompt:
 ```powershell
 .\bin\windows\kafka-server-start.bat config\server.properties
 ```
 
-You will see lots of text, this is normal.
+- You will see lots of scrolling, this is normal.
 
+# Connecting
 Try to connect to you local kafka now !
+Or use telnet to test the hostname kafka is listening to.
+In the lines kafka outputs you'll see to which hostname the kafka-broker is listening to.
+It's almost always 9092.
+
+You can test connectivity by telnet (PuTTy) or using a simple consumer in Python etc.
