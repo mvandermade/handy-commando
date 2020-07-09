@@ -14,7 +14,7 @@ This will allow a console for example to "see" the files in these directories as
 - Add your variable. For a JDK this could be: ```%USERPROFILE%\jdk-14.0.1\bin```
 - System path goes before user path, so make sure to check both if you have issues.
 
-# Register JAVA_HOME environment variable
+## Register JAVA_HOME environment variable
 - In the user variable setting part, click button "New..."
 - As example for a JDK this could be:
 - Variable name: JAVA_HOME
