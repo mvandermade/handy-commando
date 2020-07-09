@@ -9,11 +9,9 @@ Gradle requires then environment variable ```JAVA_HOME``` to point to a jdk.
 - To install a JDK, take a look at openjdk-windows.
 
 ## Download
-I downloaded the binaries
-https://gradle.org/next-steps/?version=6.5.1&format=bin
-Then verified the SHA-256:
-https://services.gradle.org/distributions/gradle-6.5.1-bin.zip.sha256
-```certutil -hashfile gradle-6.5.1-bin.zip SHA256```
+- I downloaded the binaries here: https://gradle.org/next-steps/?version=6.5.1&format=bin
+- Then verified the SHA-256 with: https://services.gradle.org/distributions/gradle-6.5.1-bin.zip.sha256
+- Using ```certutil -hashfile gradle-6.5.1-bin.zip SHA256```
 
 ## Install
 Extracted using unzip to ```%USERPROFILE%\gradle-6.5.1```
