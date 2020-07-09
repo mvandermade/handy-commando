@@ -1,7 +1,9 @@
 # Install
 
 ## Prerequisites
-Gradle requires JAVA_HOME. To install a JDK that exports these variables take a look at openjdk-windows.
+Gradle requires then environment variable ```JAVA_HOME``` to point to a jdk.
+- In my case, the value of JAVA_HOME = ```%USERPROFILE%\gradle-6.5.1\bin```
+To install a JDK, take a look at openjdk-windows.
 
 ## Download
 I downloaded the binaries
@@ -11,9 +13,9 @@ https://services.gradle.org/distributions/gradle-6.5.1-bin.zip.sha256
 ```certutil -hashfile gradle-6.5.1-bin.zip SHA256```
 
 ## Install
-Extracted to ```%USERPROFILE%\gradle-6.5.1```
+Extracted using unzip to ```%USERPROFILE%\gradle-6.5.1```
 
 ## Configure
-Add the /bin folder of the extracted data to path. In my case this is %USERPROFILE%\gradle-6.5.1\bin
+Add the /bin (or \bin on windows) folder of the extracted data to path. In my case this is %USERPROFILE%\gradle-6.5.1\bin
 Therefore I added ```%USERPROFILE%\gradle-6.5.1\bin``` to the user path.
 Check the file windows-path-variables.md to check how to to so
