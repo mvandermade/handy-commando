@@ -21,4 +21,4 @@ This will allow a console for example to "see" the files in these directories as
 - Value: ```%USERPROFILE%\jdk-14.0.1\```
 
 # Note:
-- If you run into trouble calling the command ```java``` check if there are any other java (JRE)'s that are also in the path.
+- If you run into trouble calling the command ```java``` check if there are any other java (JRE)'s that are also in the path. System path goes before user path, so the problem could be that the variables you declare are never applied. Instead you should now find the duplicate definition by hand.
