@@ -1,5 +1,8 @@
 # Install
 
+# Why
+Useful for making gradle wrappers
+
 ## Prerequisites
 Gradle requires then environment variable ```JAVA_HOME``` to point to a jdk.
 - In my case, the value of JAVA_HOME = ```%USERPROFILE%\gradle-6.5.1\bin```
@@ -20,3 +23,7 @@ Extracted using unzip to ```%USERPROFILE%\gradle-6.5.1```
 - In my case this is %USERPROFILE%\gradle-6.5.1\bin
 - Therefore I added ```%USERPROFILE%\gradle-6.5.1\bin``` to the user path.
 - Check the file windows-path-variables.md to check how to to so
+
+# Run
+In a new empty folder simply type in the command prompt: ```gradle```.
+- You should be greeted by a working gradle !
