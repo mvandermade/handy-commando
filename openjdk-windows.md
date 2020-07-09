@@ -17,6 +17,8 @@ Go to:
 - Click button environment variables.
 Add to Uservariables:
 ```%USERPROFILE%\jdk-14.0.1\bin```
+- Note: if you run into trouble calling the command ```java``` check if there are any other java (JRE)'s that are also in the path.
+- System path goes before user path, so make sure to check both if you have issues.
 
 # Register JAVA_HOME environment variable
 Optional, but lots of programs expect it...
