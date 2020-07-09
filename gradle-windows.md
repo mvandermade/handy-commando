@@ -6,7 +6,7 @@ Useful for making gradle wrappers
 ## Prerequisites
 Gradle requires then environment variable ```JAVA_HOME``` to point to a jdk.
 - In my case, the value of JAVA_HOME = ```%USERPROFILE%\gradle-6.5.1\bin```
-To install a JDK, take a look at openjdk-windows.
+- To install a JDK, take a look at openjdk-windows.
 
 ## Download
 I downloaded the binaries
