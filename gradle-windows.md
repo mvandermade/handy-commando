@@ -16,6 +16,7 @@ https://services.gradle.org/distributions/gradle-6.5.1-bin.zip.sha256
 Extracted using unzip to ```%USERPROFILE%\gradle-6.5.1```
 
 ## Configure
-Add the /bin (or \bin on windows) folder of the extracted data to path. In my case this is %USERPROFILE%\gradle-6.5.1\bin
-Therefore I added ```%USERPROFILE%\gradle-6.5.1\bin``` to the user path.
-Check the file windows-path-variables.md to check how to to so
+- Add the /bin (or \bin on windows) folder of the extracted data to path.
+- In my case this is %USERPROFILE%\gradle-6.5.1\bin
+- Therefore I added ```%USERPROFILE%\gradle-6.5.1\bin``` to the user path.
+- Check the file windows-path-variables.md to check how to to so
