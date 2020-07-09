@@ -12,6 +12,7 @@ So all programs that need java can find it in the global %PATH%
 Go to:
 - Right click My PC 
 - Click Properties in the menu
+- In the left column choose advanced system properties.
 - Go to the tab Advanced.
 - Click button environment variables.
 Add to Uservariables:
@@ -22,6 +23,7 @@ Optional, but lots of programs expect it...
 Step by step: 
 - Right click My PC 
 - Click Properties in the menu
+- In the left column choose advanced system properties.
 - Go to the tab Advanced.
 - Click button environment variables.
 - Now in the user variable setting, click button "New..."
