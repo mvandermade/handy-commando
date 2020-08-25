@@ -23,3 +23,19 @@ In the lines kafka outputs you'll see to which hostname the kafka-broker is list
 It's almost always 9092.
 
 You can test connectivity by telnet (PuTTy) or using a simple consumer in Python etc.
+
+# Commands
+## List topics
+```powershell
+bin\windows\kafka-topics.bat --list --zookeeper localhost:2181
+```
+
+## Commandline consumer
+```powershell
+bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test
+```
+
+## Commandline producer
+```powershell
+bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test
+```
