@@ -5,3 +5,8 @@ works on most POSIX-implementors
 ```sh
 find -iname "filename"
 ```
+
+## Extract tar gz
+```sh
+tar -zxvf
+```
